@@ -1,0 +1,4 @@
+[submodule "OptimizelySDK"]
+	path = OptimizelySDK
+	url = https://github.com/msohailhussain/csharp-sdk.git
+	branch = master
