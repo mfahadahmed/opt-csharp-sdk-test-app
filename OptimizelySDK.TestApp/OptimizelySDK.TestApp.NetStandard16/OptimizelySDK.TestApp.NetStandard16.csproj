@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+        <Compile Include="..\OptimizelySDK.TestApp\Entities\OptimizelyParams.cs" />
+		<Compile Include="..\OptimizelySDK.TestApp\Entities\TestAppConsoleLogger.cs" />
+		<Compile Include="..\OptimizelySDK.TestApp\Tests\OptimizelyTests.cs" />
+		<Compile Include="..\OptimizelySDK.TestApp\OptimizelyRunner.cs" />
+		<Compile Include="..\OptimizelySDK.TestApp\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\TestData.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Optimizely.SDK" Version="1.2.1" />
+  </ItemGroup>
+
+</Project>
